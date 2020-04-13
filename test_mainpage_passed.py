@@ -124,7 +124,7 @@ class Mainpage(unittest.TestCase):
         for ele in Original_title:
             jobtitle = ele.split(" -")[0].replace(" ","_").upper()
             if '' == ele:
-                jobtitle = "AWCYTESTDEMO"
+                jobtitle = "xxx"
             Jobtitle.append(jobtitle)
 
         #除去mainpage的标题和url
@@ -133,10 +133,10 @@ class Mainpage(unittest.TestCase):
         Num_Jobttitle = len(Jobtitle)
         Authority_of_ThisAccount = dict(zip(Job_mainpage,JobUrl))
 
-        Total_Authority = {"AWCYTESTDEMO": 'about:blank',
-                           'CONFORMANCE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job4.php?id=2',
-                           'COVERAGE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job3.php?id=3',
-                           'PERFORMANCE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job2.php?id=4'}
+        Total_Authority = {"xxx（title）": 'xxx（url）',
+                           "xxx（title）": 'xxx（url）',
+                           "xxx（title）": 'xxx（url）',
+                           "xxx（title）": 'xxx（url）'}
 
         for job in Job_mainpage:
             if job in Jobtitle:
