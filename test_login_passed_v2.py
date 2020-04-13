@@ -19,7 +19,7 @@ class Parameter():
     name3_random = ''.join(random.sample(string.ascii_letters + string.digits, 8))
     name3_password = "123"
 
-    url_ctpqa = "http://ctpqa.cidanash.com:8083"
+    url_ctpqa = ""
 
 class Login(unittest.TestCase):
     """test cases of login"""
