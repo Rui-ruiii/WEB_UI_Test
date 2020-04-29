@@ -195,10 +195,7 @@ class Mainpage(unittest.TestCase):
         Num_Jobttitle = len(Jobtitle)
         Authority_of_ThisAccount = dict(zip(Jobtitle,JobUrl))
 
-        Total_Authority = {"REGRESSION_REPORT": 'http://ctpqa.cidanash.com:8083/awcy_regress.php',
-                           'CONFORMANCE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job4.php?id=2',
-                           'COVERAGE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job3.php?id=3',
-                           'PERFORMANCE_TEST': 'http://ctpqa.cidanash.com:8083/Jenkins_Job2.php?id=4'}
+        Total_Authority = {"your web title": 'your web url'}
 
         for job in Job_mainpage:
             if job in Jobtitle:
