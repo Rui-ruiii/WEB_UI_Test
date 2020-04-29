@@ -58,7 +58,7 @@ class Conformance(unittest.TestCase):
 
         # 拿到last 10 builds中的后端数据
         global Ajax_list
-        Ajax_list = uti.get_Ajax("http://ctpqa.cidanash.com:8083/ajax-getBuilds.php?count=10&job=2")
+        Ajax_list = uti.get_Ajax("your url")
 
         global joblist_id, joblist_commit, joblist_message, joblist_starttime, joblist_duration, joblist_by, joblist_status
         joblist_id, joblist_commit, joblist_message, joblist_starttime, joblist_duration, joblist_by, joblist_status = uti.get_Page_10builds_info()
