@@ -125,7 +125,7 @@ class Conformance(unittest.TestCase):
 
         # 拿到last 10 builds中的后端数据
         global Ajax_list
-        Ajax_list = uti.get_Ajax("http://ctpqa.cidanash.com:8083/ajax-getBuilds.php?count=10&job=2")
+        Ajax_list = uti.get_Ajax("your url")
 
     # @pytest.mark.skipif(build_history, reason="Run only in first deploy")
     # def test_first_deploy(self):
