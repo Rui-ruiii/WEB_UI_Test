@@ -77,7 +77,7 @@ class Utility_function(unittest.TestCase):
         #     handler_info = logging.FileHandler('log.txt', 'w')
         #     handler_info.setLevel(logging.INFO)
 
-        # console中输出日志信息
+        # console中输出日志信息(console输出和上方两行的log.txt只能选一种输出方式，不可以共存)
             handler_info = logging.StreamHandler()
             handler_info.setLevel(logging.INFO)
 
